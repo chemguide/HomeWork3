@@ -30,7 +30,7 @@ public class Main {
         int paperSheetCountPerStudent = paperSheetCount / studentsTotal;
         System.out.println("На каждого ученика рассчитано " + paperSheetCountPerStudent + " листов бумаги");
         //Задача 4
-        byte extruderSpeedPerMin = 16 / 2;
+        int extruderSpeedPerMin = 16 / 2;
         int bottlesPer20Min = extruderSpeedPerMin * 20;
         int bottlesPerDay = bottlesPer20Min * 3 * 24;
         int bottlesPer3Days = bottlesPerDay * 3;
@@ -45,7 +45,7 @@ public class Main {
         byte PaintCanQuantPerClassBrown = 4;
         int ClassQuant = PaintCanQuantTot / (PaintCanQuantPerClassBrown + PaintCanQuantPerClassWhite);
         int PaintCanQuantWhiteTot = ClassQuant * PaintCanQuantPerClassWhite;
-        int PaintCanQuantBrownTot = PaintCanQuantWhiteTot * 2;
+        int PaintCanQuantBrownTot = ClassQuant * PaintCanQuantPerClassBrown;
         System.out.println("В школе, где " + ClassQuant + " классов, нужно " + PaintCanQuantWhiteTot + " банок белой краски и " + PaintCanQuantBrownTot + " банок коричневой краски");
         //Задача 6
         byte bananaWeight = 80;
@@ -85,9 +85,6 @@ public class Main {
         System.out.println("У Маши зарплата стала " + mashaSalaryNew + " рублей в месяц, а годовой доход вырос на " + mashaYearDiff + " рублей");
         System.out.println("У Дениса зарплата стала " + denSalaryNew + " рублей в месяц, а годовой доход вырос на " + denYearDiff + " рублей");
         System.out.println("У Кристины зарплата стала " + kristSalaryNew + " рублей в месяц, а годовой доход вырос на " + kristYearDiff + " рублей");
-
-
-
 
 
     }
